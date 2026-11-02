@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css_assets/myfirststyles.css">
+    <script src="javascript/java.js" defer></script>
+    <title>Khanyisani's Skin Care | Enquiry</title>
+</head>
+<body>
+    <header>
+        <h1>KHANYISANI'S SKIN CARE</h1>
+       <img class="logo" src="/Users/mathebulakhanyisani/Desktop/images/logo.png" alt="Khanyisani's Skin Care logo">
+        <nav class="nav-link" aria-label="main navigation">
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="enquiry.html" aria-current="page">Enquiry</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Enquiry</h2>
+        <form id="enquiry-form" method="post" action="#">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Your Name">
+
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" name="surname" required placeholder="Your Surname">
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required placeholder="name@example.com">
+
+            <label for="phonenumber">Phone Number:</label>
+            <input type="tel" id="phonenumber" name="phonenumber" required placeholder="e.g. 082 123 4567">
+
+            <label for="enquiryType">Enquiry Type:</label>
+            <select id="enquiryType" name="enquiryType" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="combo">Kit / Bundle</option>
+                <option value="standalone">Single Product</option>
+            </select>
+
+            <label for="product">Product:</label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Choose an option</option>
+            </select>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" placeholder="Type your enquiry here..." rows="5" cols="40" required></textarea>
+
+            <button type="submit">Submit Enquiry</button>
+        </form>
+        <div id="form-result" class="form-result" aria-live="polite"></div>
+    </main>
+
+    <footer>
+        <h4>GLOWTHEORY SA</h4>
+        <p>&copy; 2026 Khanyisani's Skin Care - Bringing Light to your Skin. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
